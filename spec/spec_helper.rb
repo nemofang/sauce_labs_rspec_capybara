@@ -4,9 +4,16 @@ require 'capybara'
 require 'capybara/rspec'
 require 'capybara/dsl'
 require 'selenium-webdriver'
+require 'site_prism'
+require 'faker'
+require 'require_all'
+require 'yaml'
 require 'dotenv'
+require_all 'lib'
 
 Dotenv.load
+
+CREDENTIALS = YAML.load_file(File.join(__dir__, '..', 'credentials.yml'))
 
 Capybara.register_driver :selenium_chrome do |app|
   Selenium::WebDriver::Chrome.driver_path = File.join(__dir__, '..', 'lib/chromedriver')
@@ -68,3 +75,8 @@ RSpec.configure do |config|
     end
   end if ENV['PLATFORM']
 end
+
+SitePrism.configure do |config|
+  config.use_implicit_waits = true
+end
+

@@ -3,7 +3,7 @@ def run_tests(platform, browser, version, junit_dir)
 end
 
 task :test_locally do
-  system('parallel_rspec spec')
+  system('parallel_rspec -n 2 spec')
 end
 
 task :windows_8_1_chrome_43 do

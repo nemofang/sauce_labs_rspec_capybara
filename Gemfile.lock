@@ -15,9 +15,12 @@ GEM
     domain_name (0.5.20160826)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.1)
+    faker (1.6.6)
+      i18n (~> 0.5)
     ffi (1.9.14)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
+    i18n (0.7.0)
     json (1.8.3)
     mime-types (2.99.3)
     mini_portile2 (2.1.0)
@@ -33,6 +36,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (11.2.2)
+    require_all (1.3.3)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
@@ -60,6 +64,9 @@ GEM
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    site_prism (2.9)
+      addressable (>= 2.3.3, < 3.0)
+      capybara (>= 2.1, < 3.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
@@ -73,12 +80,15 @@ PLATFORMS
 DEPENDENCIES
   capybara
   dotenv
+  faker
   parallel_tests
   rake
+  require_all
   rspec
   rspec-instafail
   sauce_whisk
   selenium-webdriver
+  site_prism
 
 RUBY VERSION
    ruby 2.3.0p0
