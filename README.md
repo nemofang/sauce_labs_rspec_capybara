@@ -35,6 +35,9 @@ $ rake test_locally
 $ rake test_sauce
 ```
 
+### page-objects branch
+The branch `page-objects` demos how to setup and write test scripts using page objects pattern with [site_prism](https://github.com/natritmeyer/site_prism).
+
 ### Advice/Troubleshooting
 
 1. There may be additional latency when using a remote webdriver to run tests on Sauce Labs. Timeouts or Waits may need to be increased.
