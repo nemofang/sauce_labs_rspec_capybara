@@ -1,0 +1,4 @@
+--require rspec/instafail
+--format RSpec::Instafail
+--format progress # to keep dots appear
+--color

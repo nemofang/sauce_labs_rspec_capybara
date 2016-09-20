@@ -4,6 +4,7 @@ ruby '2.3.0'
 
 # Install needed gems
 gem 'rspec'
+gem 'rspec-instafail'
 gem 'capybara'
 gem 'selenium-webdriver'
 gem 'parallel_tests'

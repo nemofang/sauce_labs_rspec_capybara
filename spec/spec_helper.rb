@@ -13,7 +13,6 @@ Capybara.register_driver :selenium_chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
 
-# Copy from sauche sample git repo
 Capybara.register_driver :sauce_selenium do |app|
   capabilities = {
     platform: ENV['PLATFORM'],
